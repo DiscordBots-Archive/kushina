@@ -36,7 +36,7 @@ module.exports.run = async (client, message, args, level) => {
             .addField('Writer:', `${data.writer}`, true)
             .setThumbnail(data.poster)
             .setColor(embedcolor)
-            .setFooter("Powered by Hanekawa.Bot™");
+            .setFooter("Powered by Uzumaki-Clan");
           msg.edit({embed});
         }
     });
