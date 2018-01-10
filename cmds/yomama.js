@@ -18,7 +18,7 @@ module.exports.run = async (client, message, args, level) => {
         .setColor(embedcolor)
         .setDescription("Yomama jokes!!")
         .addField("Joke:", joke.joke)
-        .setFooter("Powered by Hanekawa.Bot™");
+        .setFooter("Powered by Uzumaki-Clan");
         message.channel.send({embed: embed});
       } else {
         Logger.error(`Got an error: ${err}, status code: ${res.status}`)
