@@ -44,7 +44,7 @@ module.exports.run = async (client, message, args) => {
     } else {
         if (!message.mentions.users.first()) {
             const embed = new Discord.RichEmbed()
-            .setDescription("You need hugs? Meoow~")
+            .setDescription("You need hugs? **hugs you**")
             .setColor(embedcolor)
             .setImage(`${imageArray[hug]}`)
             .setFooter("Powered by Uzumaki-Clan");
