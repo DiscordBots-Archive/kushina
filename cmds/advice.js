@@ -7,7 +7,7 @@ module.exports.run = async (client, message, args) => {
             .setColor(embedcolor)
             .setDescription("Random Advices")
             .addField("Advice", `${JSON.parse(body).slip.advice}`)
-            .setFooter("Powered by Uzumaki-clan")
+            .setFooter("Powered by Uzumaki-Clan")
             message.channel.send({embed: embed});
         } else {
           message.channel.send(`**Advice:**\n\n I couldn't think of any advice...`).then(m => m.delete(25000))
