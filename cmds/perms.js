@@ -27,7 +27,7 @@ module.exports.run = async (client, message, args) => {
                 message.channel.send({embed: perms})
                 var perms = new Discord.RichEmbed()
                 .setFooter('Triggered by ' + message.author.username, message.author.avatarURL)
-                .setFooter("Powered by Hanekawa.Bot™");
+                .setFooter("Powered by Uzumaki-Clan");
                 i = 0;
             }
 		}
