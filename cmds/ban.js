@@ -16,13 +16,13 @@ module.exports.run = async (client, message, args) => {
 
 				message.reply(banee + " has been successfullly banned.");
 				
-				var ban = new Discord.RichEmbed()
-					.setAuthor(user.username, user.avatarURL)
+				var ban = new Discord.RichEmbed();
+					ban.setAuthor(user.username, user.avatarURL)
 					.addField('Member Banned', `**:hammer: ${user.username}#${user.discriminator} (${user.id}) was banned from the server.**`)
 					.addField('Responsible Moderator', message.member.displayName)
 					.addField('Reason', reason)
 					.setFooter(`${guild.name} | ${guild.members.size} members`, `${guild.iconURL}`)
-					.setColor("#F04903")
+					.setColor("#F04903");
 
 				try {
 					var log = message.guild.channels.find('name', 'mod-logs');
