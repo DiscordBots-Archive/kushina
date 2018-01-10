@@ -1,0 +1,32 @@
+const Discord = require('Discord.js');
+const moment = require("moment");
+require("moment-duration-format");
+var os = require('os');
+const fs = require("fs");
+var guilds = {};
+module.exports.run = async (client, message, args) => {
+	let embed = new Discord.RichEmbed()
+    message.channel.send("Requested by " + message.author.username)
+    message.channel.send(`== = Bot Statistics = ==
+  \`  Username ${client.user.tag}'
+  
+  =  Bot Statistics =
+     ↪ User Count       :: ${client.guilds.reduce((p, c) => p + c.memberCount, 0).toLocaleString() } Users
+     ↪ Bots Count       :: ${client.users.filter(user => user.client).size.toLocaleString()} Bots
+     ↪ Server Count     :: ${client.guilds.size.toLocaleString()} Servers
+     ↪ Custom emojis    :: ${client.emojis.size.toLocaleString()} Emojis
+     ↪ Channel Count    :: ${client.channels.size.toLocaleString()} Channels
+  =  Bot infomation =
+     ↪ Heartrate ping   :: ${Math.round(client.ping)}ms
+  =  Process Statistics =
+     ↪ DiscordJS ver    :: ${Discord.version}
+     ↪ NodeJS ver       :: ${process.version}
+     ↪ Process uptime   :: ${moment.duration(process.uptime() * 1000).format(" D [days] H [hrs] m [mins] s [secs]")}
+     ↪ Client ready     :: ${moment.duration(client.uptime).format(" D [days] H [hrs] m [mins] s [secs]")}`, {
+              code: 'asciidoc'});
+    
+}
+
+module.exports.help = {
+	name: "botstats"
+}
