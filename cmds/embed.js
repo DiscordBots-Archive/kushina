@@ -6,7 +6,7 @@ module.exports.run = async (client, message, args) => {
             .setThumbnail(message.author.displayAvatarURL)
             .setColor(embedcolor)
             .addField("Your text", args.join(' '), true)
-            .setFooter("Powered by Hanekawa.Bot™");
+            .setFooter("Powered by Uzumaki-Clan");
             return message.channel.send({embed: embed});
 }
 
