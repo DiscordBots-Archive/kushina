@@ -11,7 +11,7 @@ var embedcolor = '#' + ("000000" + Math.random().toString(16).slice(2, 8).toUppe
         .setThumbnail(message.author.displayAvatarURL)
         .addField("Message", psymsg)
         .setColor(embedcolor)
-        .setFooter("Powered by Hanekawa.Bot™");
+        .setFooter("Powered by Uzumaki-Clan");
 client.users.get("366677235597574155").send({embed: embed});
 }
 
