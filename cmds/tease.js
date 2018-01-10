@@ -22,7 +22,7 @@ module.exports.run = async (client, message, args) => {
         message.channel.send({embed: embed});
     } else {
         if (!message.mentions.users.first()) {
-            message.channel.send(" :x: You need to mention a user. meow~")
+            message.channel.send(" :x: You need to mention a user. :expressionless:")
         }
     }
 
