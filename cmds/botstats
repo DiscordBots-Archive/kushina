@@ -19,7 +19,7 @@ module.exports.run = async (client, message, args) => {
   =  Bot infomation =
      ↪ Heartrate ping   :: ${Math.round(client.ping)}ms
   =  Process Statistics =
-    ↪ NodeJS ver       :: ${process.version}
+     ↪ NodeJS ver       :: ${process.version}
      ↪ Process uptime   :: ${moment.duration(process.uptime() * 1000).format(" D [days] H [hrs] m [mins] s [secs]")}
      ↪ Client ready     :: ${moment.duration(client.uptime).format(" D [days] H [hrs] m [mins] s [secs]")}`, {
               code: 'asciidoc'});
