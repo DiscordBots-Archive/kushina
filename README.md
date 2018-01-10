@@ -1,0 +1,2 @@
+# kushina
+A discord bot
