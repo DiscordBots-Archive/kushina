@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const clientuser = require("../client.settings.json");
 module.exports.run = async (client, message, args) => {
     var mutee = message.mentions.users.array();
 		if (message.member.hasPermission('KICK_MEMBERS') || message.member.hasPermission('ADMINISTRATOR')) {
@@ -11,7 +10,10 @@ module.exports.run = async (client, message, args) => {
 
 				for(var i = 0; i < channels.length; i++) {
 					if(channels[i].type == 'text')
-						channels[i].overwritePermissions(member, {SEND_MESSAGES: null})
+						channels[i].overwritePermissions(member, {
+              SEND_MESSAGES: null,
+              SEND_TTS_MESSAGES: null
+            })
 				}
 				message.reply(member + ' has been unmuted.')
 
