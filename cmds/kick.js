@@ -19,6 +19,7 @@ module.exports.run = async (client, message, args) => {
     message.reply(" you do not have permission to perform this action!");
   }
 }
+}
 
 
 module.exports.help = {
