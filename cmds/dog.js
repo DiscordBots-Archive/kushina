@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
                 const embed = new Discord.RichEmbed()
                 .setColor(embedcolor)
                 .setImage(`${json[0].data.children[0].data.preview.images[0].source.url}`)
-                .setFooter("Powered by Hanekawa.Bot™");
+                .setFooter("Powered by Uzumaki-Clan");
                 message.channel.send({embed: embed});
                 msg.delete();
             }
