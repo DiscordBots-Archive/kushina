@@ -23,7 +23,7 @@ module.exports.run = async (client, message, args) => {
 					.addField('Responsible Moderator', message.member.displayName)
 					.addField('Reason', reason)
 					.setFooter(`${guild.name} | ${guild.members.size} members`, `${guild.iconURL}`)
-					.setColor("#F04903")
+					
 
 				try {
 					var log = message.guild.channels.find('name', 'mod-logs');
