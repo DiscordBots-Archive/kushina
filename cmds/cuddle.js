@@ -33,7 +33,7 @@ module.exports.run = async (client, message, args) => {
     } else {
         if (!message.mentions.users.first()) {
             const embed = new Discord.RichEmbed()
-            .setDescription("Kushina cuddles with you **giggles: :heart:")
+            .setDescription("Kushina cuddles with you **giggles** :heart: ")
             .setColor(embedcolor)
             .setImage(`${imageArray[cuddle]}`)
             .setFooter("Powered by Uzumaki-Clan");
