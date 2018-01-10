@@ -20,7 +20,7 @@ module.exports.run = async (client, message, args) => {
             message.channel.send(`Created poll with title ${response.body.title} at https://strawpoll.me/${response.body.id}`);
         });
     } catch(err) {
-        message.channel.send('Wrong use of the command! meow~ \nCommand Usage: //poll question|option1, option2, option3, etc.');
+        message.channel.send('Wrong use of the command!\nCommand Usage: //poll question|option1, option2, option3, etc.');
     }
 }
 
