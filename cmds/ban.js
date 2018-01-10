@@ -16,8 +16,8 @@ module.exports.run = async (client, message, args) => {
 
 				message.reply(banee + " has been successfullly banned.");
 				
-				var ban = new Discord.RichEmbed();
-				ban.setColor(0xFFB200)
+				var embed = new Discord.RichEmbed();
+				embed.setColor(0xFFB200)
 					.setAuthor(user.username, user.avatarURL)
 					.addField('Member Banned', `**:hammer: ${user.username}#${user.discriminator} (${user.id}) was banned from the server.**`)
 					.addField('Responsible Moderator', message.member.displayName)
@@ -27,9 +27,9 @@ module.exports.run = async (client, message, args) => {
 
 				try {
 					var log = message.guild.channels.find('name', 'mod-logs');
-					log.send({embed: ban});
+					log.send({embed: embed});
 				} catch (e) {
-					message.channel.send({embed: ban});
+					message.channel.send({embed: embed});
 				}
 			} catch (e) {
 				console.error(e);
