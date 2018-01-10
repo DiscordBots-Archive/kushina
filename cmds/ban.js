@@ -26,7 +26,7 @@ module.exports.run = async (client, message, args) => {
 
 				try {
 					var log = message.guild.channels.find('name', 'mod-logs');
-					log.send({embed: ban});
+					message.channel.send({embed: ban});
 				} catch (e) {
 					message.channel.send({embed: ban});
 				}
