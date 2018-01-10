@@ -15,7 +15,7 @@ module.exports.run = async (client, message, args) => {
     .addField("Channel ID", ch.id)
     .addField("Channel Topic", topic)
     .addField("Users", ch.members.size)
-    .setFooter("Powered by Hanekawa.Bot™");
+    .setFooter("Powered by Uzumaki-Clan");
   message.channel.send({embed});
 }
 
