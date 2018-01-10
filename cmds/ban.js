@@ -22,7 +22,7 @@ module.exports.run = async (client, message, args) => {
 					.addField('Member Banned', `**:hammer: ${user.username}#${user.discriminator} (${user.id}) was banned from the server.**`)
 					.addField('Responsible Moderator', message.member.displayName)
 					.addField('Reason', reason)
-					.setFooter(`${guild.name} | ${guild.members.size} members`, `${guild.iconURL}`)
+					.setFooter(`${guild.name} | ${guild.members.size} members`, `${guild.iconURL}`);
 					
 
 				try {
