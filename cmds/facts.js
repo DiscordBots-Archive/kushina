@@ -8,7 +8,6 @@ exports.run = function(client, message, args) {
                             try {
                                 var embedcolor = '#' + ("000000" + Math.random().toString(16).slice(2, 8).toUpperCase()).slice(-6);
                                 var e = new Discord.RichEmbed()
-                                .setFooter("Powered by Shihouin Bot™")
                                 .setColor(embedcolor)
                                 .setAuthor(client.user.username)
                                 .setDescription(result.facts.fact[0])
