@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
         .setDescription(jokes[Math.floor(Math.random() * (max - min + 1)) + min].body)
         .setTitle("Random Jokes.")
         .setColor(embedcolor)
-        .setFooter("Powered by Hanekawa.Bot™");
+        .setFooter("Powered by Uzumaki-Clan");
         message.channel.send({embed: embed});
         
     
