@@ -29,11 +29,9 @@ const embed = new Discord.RichEmbed()
     .addField("Click the emoji", `[🤖](https://discordapp.com/oauth2/authorize?client_id=400660172961349643&scope=bot&permissions=2146958591)`, true)
     .addField("Channels Overall", client.channels.size, true)
     .addField("Guilds Overall", client.guilds.size, true);
-  message.channel.send({
-    embed
-  }).catch(e => logger.error(e))
-};
+  message.channel.send({embed: embed});
 
+}
 module.exports.help = {
     name: "botinfo"
 }
