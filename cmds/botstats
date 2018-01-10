@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
     message.channel.send("Requested by " + message.author.username)
     message.channel.send(`== = Bot Statistics = ==
   \`  Username ${client.user.tag}'
-  
+
   =  Bot Statistics =
      ↪ User Count       :: ${client.guilds.reduce((p, c) => p + c.memberCount, 0).toLocaleString() } Users
      ↪ Bots Count       :: ${client.users.filter(user => user.client).size.toLocaleString()} Bots
@@ -19,12 +19,11 @@ module.exports.run = async (client, message, args) => {
   =  Bot infomation =
      ↪ Heartrate ping   :: ${Math.round(client.ping)}ms
   =  Process Statistics =
-     ↪ DiscordJS ver    :: ${Discord.version}
-     ↪ NodeJS ver       :: ${process.version}
+    ↪ NodeJS ver       :: ${process.version}
      ↪ Process uptime   :: ${moment.duration(process.uptime() * 1000).format(" D [days] H [hrs] m [mins] s [secs]")}
      ↪ Client ready     :: ${moment.duration(client.uptime).format(" D [days] H [hrs] m [mins] s [secs]")}`, {
               code: 'asciidoc'});
-    
+
 }
 
 module.exports.help = {
