@@ -11,7 +11,7 @@ exports.run = function(client, message, args) {
 					.setColor(embedcolor)
                     .setTitle("Cat Fact #" + num)
                     .setDescription(catfact[num].description)
-                    .setFooter("Powered by Hanekawa.Bot™");
+                    .setFooter("Powered by Uzumaki-Clan");
                 message.channel.send({ embed: e });
             });
 }
