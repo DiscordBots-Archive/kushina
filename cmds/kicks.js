@@ -32,7 +32,7 @@ module.exports.run = async (client, message, args) => {
     } else {
         if (!message.mentions.users.first()) {
             const embed = new Discord.RichEmbed()
-            .setDescription("Hanekawa kicks you! meow~")
+            .setDescription("**Smirks and kicks you hard** :smirk:")
             .setColor(embedcolor)
             .setImage(`${imageArray[kick]}`)
             .setFooter("Powered by Uzumaki-Clan");
