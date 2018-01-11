@@ -21,7 +21,7 @@ module.exports.run = async (client, message, args) => {
     var embedcolor = '#' + ("000000" + Math.random().toString(16).slice(2, 8).toUpperCase()).slice(-6);
     if (message.mentions.users.first()) {
         const embed = new Discord.RichEmbed()
-        .setDescription(''+ message.mentions.users.first() + ' is angry at '+ message.author.toString())
+        .setDescription(''+ message.author.toString() + ' is angry at ' + message.mentions.users.first() )
         .setColor(embedcolor)
         .setImage(`${imageArray[angry]}`)
         .setFooter("Powered by Uzumaki-clan")
