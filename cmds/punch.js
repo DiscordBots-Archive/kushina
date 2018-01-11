@@ -6,7 +6,8 @@ var imageArray = [
     "https://pa1.narvii.com/5668/d845ea44f1ce209351976f2a22b4c728873fac21_hq.gif",
     "https://pa1.narvii.com/6084/b9e77789372932de97e5cf1bd046a348fd7ca080_hq.gif",
     "https://media1.tenor.com/images/995c766275e66c3aa5efd55ab7d8f86a/tenor.gif",
-    "http://gifimage.net/wp-content/uploads/2017/09/anime-punch-in-the-face-gif-3.gif"
+    "http://gifimage.net/wp-content/uploads/2017/09/anime-punch-in-the-face-gif-3.gif",
+    "https://media.giphy.com/media/11On6xCGyBrAA0/giphy.gif"
 ];
 module.exports.run = async (client, message, args) => {
     var punch = [Math.floor(Math.random() * imageArray.length)]
