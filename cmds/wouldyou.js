@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
             .setURL(body.link)
             .setColor(embedcolor)
             .setDescription(`${body.choicea} OR ${body.choiceb}?`)
-            .setFooter("Powered by Hanekawa.Bot™");
+            .setFooter("Powered by Uzumaki-Clan");
             return message.channel.send({embed: embed});
 }
 
