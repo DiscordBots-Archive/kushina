@@ -8,7 +8,8 @@ var imageArray = [
     "http://i0.kym-cdn.com/photos/images/newsfeed/000/771/285/f74.gif",
     "https://media1.tenor.com/images/80a9b3e20d654573c80909fb75185da6/tenor.gif",
     "https://lh3.googleusercontent.com/-oGpCi103q3k/VRcmna1t5vI/AAAAAAAAGAo/IMcZCC6owGo/w506-h750/tease.gif",
-    "https://pa1.narvii.com/6155/e66833ddc6ad16f5a01db219ab25c3d809e1c45b_hq.gif"
+    "https://pa1.narvii.com/6155/e66833ddc6ad16f5a01db219ab25c3d809e1c45b_hq.gif",
+    "https://pa1.narvii.com/6056/1e526982835da80567edc19e337fb273d9aab63f_hq.gif"
 ];
 module.exports.run = async (client, message, args) => {
     var tease = [Math.floor(Math.random() * imageArray.length)]
