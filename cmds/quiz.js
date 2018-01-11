@@ -17,7 +17,7 @@ module.exports.run = async (client, message, args) => {
                 **${decodeURIComponent(body.results[0].category)}**
                 True or False: ${decodeURIComponent(body.results[0].question)}
             `)
-            .setFooter("Powered by Hanekawa.Bot™");
+            .setFooter("Powered by Uzumaki-Clan");
         await message.channel.send({embed: embed});
         try {
             const collected = await message.channel.awaitMessages((res) => res.author.id === message.author.id, {
