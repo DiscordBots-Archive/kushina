@@ -23,9 +23,6 @@ exports.run = function(client, message, args) {
     if (player2.id == client.user.id) {
         message.channel.send(client.user.username + " **COMPLETELY AND UTTERLY DESTROYED** " + player1.username + "! *[-999999 HP] [0 HP remaining]*")
         message.channel.send("*Hint: Don't try to fight me! Nothing personal, kid.*")
-    } else if (player2.id == '366677235597574155') {
-        message.channel.send(player2.username + " **COMPLETELY AND UTTERLY DESTROYED** " + player1.username + "! *[-999999 HP] [0 HP remaining]*")
-        message.channel.send("*Hint: Don't try to fight " + player2.username + "! Nothing personal, kid.*")
     } else if (player2 != null) {
         while (hp1 > 0 && hp2 > 0) {
             times++;
