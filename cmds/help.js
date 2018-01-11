@@ -15,7 +15,7 @@ module.exports.run = async (client, message, args) => {
     message.channel.send("", {
         embed: new Discord.RichEmbed()
         .setTitle("Help")
-        .setDescription("Here all actions commands : \n- bite \n- cry \n- cuddle \n- dance \n- facedesk \n- hug \n- kicks \n- kiss \n- laugh \n- lewd \n- lick \n- pat \n- poke \n- pout \n- punch \n- slap \n- smirk \n- spank \n- tease \n- tickle \n- triggered \n- wasted")
+        .setDescription("Here all actions commands : \n- angry \n- bite \n- cry \n- cuddle \n- dance \n- facedesk \n- hug \n- kicks \n- kiss \n- laugh \n- lewd \n- lick \n- pat \n- poke \n- pout \n- punch \n- slap \n- smirk \n- spank \n- tease \n- tickle \n- triggered \n- wasted")
         .setColor(embedcolor)
         .setTitle("Help Command")
         .setFooter("Requested by: " + message.author.tag)
