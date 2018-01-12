@@ -25,7 +25,7 @@ module.exports.run = async (client, message, args) => {
         message.channel.send("", {
             embed: new Discord.RichEmbed()
             .setTitle("Help")
-            .setDescription("Here all image commands : \n- anime \n- animeme \n- avatar \n- bear \n- bird \n- cat \n- dankmeme \n- dog \n- meme \n- neko \n- pokemon \n- splash \n- tail \n- yesorno")
+            .setDescription("Here all image commands : \n- anime \n- animeme \n- avatar \n- bear \n- bird \n- cat \n- cute \n- dankmeme \n- dog \n- meme \n- neko \n- pokemon \n- splash \n- tail \n- yesorno")
             .setColor(embedcolor)
             .setFooter("Requested by: " + message.author.tag)
         });
