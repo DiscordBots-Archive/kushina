@@ -20,7 +20,7 @@ var imageArray = [
 module.exports.run = async (client, message, args) => {
     var tail = [Math.floor(Math.random() * imageArray.length)]
     var embedcolor = '#' + ("000000" + Math.random().toString(16).slice(2, 8).toUpperCase()).slice(-6);
-    (!message.mentions.users.first()) {
+    if (!message.mentions.users.first()) {
             const embed = new Discord.RichEmbed()
             .setDescription("Tail wagging random gifs")
             .setColor(embedcolor)
@@ -28,7 +28,7 @@ module.exports.run = async (client, message, args) => {
             .setImage(`${imageArray[tail]}`)
             message.channel.send({embed: embed});
         }
-    }
+    
 
 }
 
