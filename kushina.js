@@ -21,7 +21,7 @@ fs.readdir("./cmds/", (err,files) => {
 })
 client.on("ready", async () => {
     console.log(`Kushina is online, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-    client.user.setGame("//help || Uzumaki Princess");
+    client.user.setGame(`//help || Uzumaki ${client.guilds.size} guilds.`);
 });
 
 client.login(process.env.BOT_TOKEN);
