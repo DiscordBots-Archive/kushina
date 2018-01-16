@@ -45,7 +45,7 @@ module.exports.run = async (client, message, args) => {
             message.channel.send("", {
                 embed: new Discord.RichEmbed()
                 .setTitle("Help")
-                .setDescription("Here all fun commands : \n- ascii \n- choose \n- choose-user \n- chuck \n- coinflip \n- cowsay \n- embed \n- emotify \n- fight \n- leet \n- lenny \n- react \n- reverse ")
+                .setDescription("Here all fun commands : \n- ascii \n- choose \n- choose-user \n- chuck \n- coinflip \n- cowsay \n- embed \n- emotify \n- fight \n- greet \n- leet \n- lenny \n- react \n- reverse ")
                 .setColor(embedcolor)
                 .setTitle("Help Command")
                 .setFooter("Requested by: " + message.author.tag)
