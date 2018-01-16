@@ -28,7 +28,7 @@ module.exports.run = async (client, message, args) => {
     } else {
         if (!message.mentions.users.first()) {
             const embed = new Discord.RichEmbed()
-            .setDescription(''+ message.mentions.users.first() + ' waves at everyone bye!')
+            .setDescription(''+ message.author.toString() +' waves at everyone bye!')
             .setColor(embedcolor)
             .setFooter("Powered by Uzumaki-clan")
             .setImage(`${imageArray[wave]}`)
