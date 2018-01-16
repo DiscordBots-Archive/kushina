@@ -1,24 +1,23 @@
 const Discord = require("discord.js");
 module.exports.run = async (client, message, args) => {
 	const responses = [
-		"It's certain",
-		"Decidedly so",
-		"Without a doubt",
-		"Yes, definitely",
-		"You may rely on it",
-		"Most likely",
-		"Yes",
-		"Better not tell you now",
-		"Cannot predict now",
-		"Concentrate and ask again",
-		"Don't count on it",
-		"No",
-		"My sources say no",
-		"Outlook not so good",
-		"Very doubtful"
+		"Hello,",
+		"Hallo,",
+		"Nǐ hǎo,",
+		"Oh.. Bonjour.. J-je te trouve resplendissante aujourd'hui!.",
+		"Hola!",
+		"It- It's not like I wanted to say hello to you, or a-anything, B-B-BAAAAAAAAAAAKAA!!!",
+		"Saudações, Vossa Excelência.",
+		"Olá, ¿como estás?.",
+		"Wsh, sisi la famille bien ou bien?",
+		"Siema.",
+		"Elo mordo.",
+		"Heya!!!",
+		"Hallo meine süsse",
+		"Hewwo!",
+		"HERRO!!"
 	];
-	if (args.length < 1) return message.channel.send(`Please input a question`)
-    message.channel.send('' + responses[Math.floor(Math.random() * responses.length)] + message.author.toString())
+	message.channel.send('' + message.author.toString() + ' umm.. ' + responses[Math.floor(Math.random() * responses.length)] + ' ' )
 		return true
 }
 
