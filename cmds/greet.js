@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
 module.exports.run = async (client, message, args) => {
 	const responses = [
-		"Hello,",
-		"Hallo,",
-		"Nǐ hǎo,",
+		"Hello",
+		"Hallo",
+		"Nǐ hǎo",
 		"Oh.. Bonjour.. J-je te trouve resplendissante aujourd'hui!.",
 		"Hola!",
 		"It- It's not like I wanted to say hello to you, or a-anything, B-B-BAAAAAAAAAAAKAA!!!",
@@ -17,8 +17,8 @@ module.exports.run = async (client, message, args) => {
 		"Hewwo!",
 		"HERRO!!"
 	];
-	message.channel.send('' + message.author.toString() + ' umm.. ' + responses[Math.floor(Math.random() * responses.length)] + ' ' )
-		return true
+	message.channel.send('' + message.author.toString() + ' umm.. ' + responses[Math.floor(Math.random() * responses.length)])
+		
 }
 
 module.exports.help = {
