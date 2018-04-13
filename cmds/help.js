@@ -88,7 +88,7 @@ module.exports.run = async (client, message, args) => {
             message.channel.send("", {
                 embed: new Discord.RichEmbed()
                 .setTitle("Help")
-                .setDescription("Here all NSFW commands : \n- danbooru \n- ecchi \n- hentai \n- lewd-neko \n- rude34")
+                .setDescription("Here all NSFW commands : \n- danbooru \n- ecchi \n- hentai \n- lewd-neko \n- rule34")
                 .setColor(embedcolor)
                 .setTitle("Help Command")
                 .setFooter("Requested by: " + message.author.tag)
