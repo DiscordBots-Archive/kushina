@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const stripIndents = require('common-tags').stripIndents;
 const RichEmbed = require('discord.js').RichEmbed;
 module.exports.run = async (client, message, args) => {
   let embed = new Discord.RichEmbed()
