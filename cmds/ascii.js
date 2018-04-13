@@ -153,7 +153,7 @@ module.exports.run = async (client, message, args) => {
 
 		const font = args.shift()
 
-		if (!fonts.includes(font)) return message.channel.send(`\`${font}\` is not in the list, you can look which fonts are in the list from here: <https://hastebin.com/qefucuyoqu.nginx>`)
+		if (!fonts.includes(font)) return message.channel.send(`\`${font}\` is not in the list, you can look which fonts the bot have use this command: //ascii-list`)
 
 		asciify(args.join(` `), font, (error, response) => {
 			if (error) return message.channel.send(error, { code: true })
